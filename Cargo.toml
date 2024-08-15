@@ -2,5 +2,7 @@
 name = "intuitils"
 version = "0.0.1"
 edition = "2021"
+description = "utilities for intuis projects"
+license = "GPL-3.0-or-later"
 
 [dependencies]
