@@ -1,8 +1,13 @@
 [package]
 name = "intuitils"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 description = "utilities for intuis projects"
 license = "GPL-3.0-or-later"
 
 [dependencies]
+serde = { version = "1", features = ["derive"] }
+crossterm = { version = "0.28", features = ["serde"] }
+
+[dev-dependencies]
+toml = "0.8"
