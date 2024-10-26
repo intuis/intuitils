@@ -8,6 +8,7 @@ license = "GPL-3.0-or-later"
 [dependencies]
 serde = { version = "1", features = ["derive"] }
 crossterm = { version = "0.28", features = ["serde"] }
-
-[dev-dependencies]
 toml = "0.8"
+xdg = "2.5"
+thiserror = "1"
+anyhow = "1"
