@@ -3,7 +3,7 @@ use std::{
     ops::{Deref, DerefMut},
 };
 
-use anyhow::Result;
+use color_eyre::Result;
 use crossterm::{
     cursor,
     event::{DisableMouseCapture, EnableMouseCapture, Event as CrosstermEvent, KeyEventKind},

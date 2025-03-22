@@ -5,7 +5,7 @@ use std::{
     sync::OnceLock,
 };
 
-use anyhow::{Context, Result};
+use color_eyre::{eyre::Context, Result};
 use serde::de::DeserializeOwned;
 use thiserror::Error;
 use xdg::BaseDirectories;
@@ -55,7 +55,7 @@ pub trait IntuiConfig: Sized + DeserializeOwned {
                         get_config_path(Self::filename(), Self::app_name())
                     )
                 }),
-                _ => anyhow::bail!(e),
+                _ => color_eyre::eyre::bail!(e),
             },
         }
     }
